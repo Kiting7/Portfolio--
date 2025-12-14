@@ -4,7 +4,6 @@
     padding: 1rem 0;
 }
 
-/* ABOUT SECTION WITH BACKGROUND */
 #about {
     background-image: url('./img/bg-sky.png');
     background-size: cover;
@@ -18,7 +17,7 @@
     overflow: hidden;
 }
 
-/* Nom style — couleur dégradée comme sur la capture */
+
 #about h1.display-4 {
     font-weight: 800;
     letter-spacing: 6px;
@@ -28,10 +27,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     z-index: 2;
-    /* au-dessus d'un éventuel overlay */
+    /
 }
 
-/* s'assurer que le conteneur est au-dessus de l'overlay */
+
 #about .container,
 #about .row,
 #about .col-12,
@@ -57,16 +56,10 @@
 
 .card-title {
     color: #fff;
-    transition: color 0.3s ease;
 }
 
 .card-text {
-    color: #b0b0b0;
     transition: color 0.3s ease;
-}
-
-.card:hover .card-text {
-    color: #fffcfc;
 }
 
 .card:hover .card-title {
@@ -74,74 +67,18 @@
 }
 
 
-#projects {
-    background-color: #131212;
-}
-
-#skills {
-    background-color: #131212;
-}
-
-/* WORK EXPERIENCE SECTION (sans card) */
 #experience {
-    background-color: #000;
+    background-color: #131212;
     color: #f0f0f0;
 }
 
-#experience h2 {
-    letter-spacing: 2px;
-}
 
-.experience-item {
-    color: #f0f0f0;
-}
-
-.experience-index {
-    font-size: 1rem;
-    color: #9e9e9e;
-}
-
-.experience-company {
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.experience-description {
-    font-size: 0.9rem;
-    color: #b0b0b0;
-}
-
-.experience-tech-label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #8a8a8a;
-}
-
-.xp-badge {
-    border-radius: 999px;
-    border: 1px solid #404040;
-    padding: 0.25rem 0.7rem;
-    font-size: 0.75rem;
-    color: #dcdcdc;
-    background-color: #111;
-}
-
-.experience-separator {
-    border-color: #505050;
-}
-
-/* SKILLS SECTION - style façon panel */
 #skills {
     background-color: #131212;
     color: #f0f0f0;
 }
 
-#skills h2 {
-    letter-spacing: 2px;
-}
 
-/* badges cliquables */
 .skill-badge {
     background-color: #111;
     color: #e0e0e0;
@@ -166,7 +103,6 @@
     border-color: #f5f5f5;
 }
 
-/* panneau de droite */
 .skill-panel {
     background-color: #1a1a1a;
     border-radius: 8px;
@@ -175,20 +111,16 @@
     min-height: 220px;
 }
 
-#skill-title {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-}
 
 #skill-description {
-    font-size: 0.95rem;
     color: #c0c0c0;
     line-height: 1.6;
 }
 
-
 #contact {
-    background-color: #000000;
+    background-color: #131212;
+    color: #f0f0f0;
+
 }
 
 #footer {
@@ -198,24 +130,12 @@
     font-size: 0.9rem;
 }
 
-/* PROFILE CIRCLE SECTION */
 #profile {
-    background-color: #000;
+    background-color: #1b1b1b;
     color: #f5f5f5;
 }
 
-.profile-name {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-}
 
-.profile-text {
-    font-size: 0.95rem;
-    color: #c0c0c0;
-    line-height: 1.7;
-}
-
-/* Wrapper pour positionner les cercles */
 .profile-circle-wrapper {
     position: relative;
     width: 260px;
@@ -223,7 +143,6 @@
     margin: 0 auto;
 }
 
-/* Cercle de base */
 .profile-circle {
     background-color: #1b1b1b;
     border-radius: 50%;
@@ -235,7 +154,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Cercle central */
+
 .center-circle {
     position: absolute;
     width: 150px;
@@ -250,7 +169,6 @@
     letter-spacing: 1px;
 }
 
-/* Petits cercles */
 .small-circle {
     position: absolute;
     width: 60px;
@@ -265,7 +183,6 @@
     pointer-events: none;
 }
 
-/* Petits cercles */
 .small-circle {
     position: absolute;
     width: 60px;
@@ -281,55 +198,52 @@
     pointer-events: none;
 }
 
-/* Positions autour du cercle central – près du centre */
-
-/* haut-gauche */
 .circle-top-left {
     top: 9px;
     left: 40px;
 }
 
-/* haut-droite */
+
 .circle-top-right {
     top: 9px;
     right: 40px;
 }
 
-/* droite (au milieu) */
+
 .circle-right {
     top: 50%;
     right: -10px;
     transform: translateY(-50%);
 }
 
-/* gauche (au milieu) */
+
 .circle-left {
     top: 50%;
     left: -10px;
     transform: translateY(-50%);
 }
 
-/* bas-gauche */
+
 .circle-top {
     bottom: 9px;
     left: 40px;
 }
 
-/* bas-droite */
+
 .circle-bottom {
     bottom: 9px;
     right: 40px;
 }
 
 
-/* Hover */
+
 .small-circle:hover {
     background-color: #f5f5f5;
     color: #000;
     border-color: #f5f5f5;
 }
 
-/* SCROLLING TECH SECTION - Avec fade sur les bords */
+
 .tech-scroll-container {
     width: 100%;
     overflow: hidden;
@@ -339,7 +253,6 @@
     position: relative;
 }
 
-/* Dégradé transparent sur les bords */
 .tech-scroll-container::before,
 .tech-scroll-container::after {
     content: '';
@@ -351,13 +264,13 @@
     pointer-events: none;
 }
 
-/* Fade à gauche */
+
 .tech-scroll-container::before {
     left: 0;
     background: linear-gradient(90deg, #000 0%, transparent 100%);
 }
 
-/* Fade à droite */
+
 .tech-scroll-container::after {
     right: 0;
     background: linear-gradient(270deg, #000 0%, transparent 100%);

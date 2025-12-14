@@ -14,7 +14,7 @@
 
 <body>
 
-    <!-- NAVIGATION / HEADER -->
+    <!-- Nav bar -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
         <div class="container-fluid px-5">
             <a class="navbar-brand fw-bold" href="#home">OMAR</a>
@@ -53,14 +53,15 @@
                     </p>
 
                     <div class="d-flex gap-3  justify-content-center">
-                        <a href="CV OMAR LAADRAOUI 2025-2026.pdf" download class="btn btn-outline-secondary ">📋
+                        <a href="CV OMAR LAADRAOUI 2025-2026.pdf" target="_blank" rel="noopener"
+                            class="btn btn-outline-secondary ">📋
                             Télécharger le CV</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- SCROLLING TECH SECTION -->
+
     <div class="tech-scroll-container bg-black">
         <div class="tech-scroll-track">
             <span class="tech-item">HTML</span>
@@ -87,29 +88,24 @@
         </div>
     </div>
 
-    <!-- PROFILE CIRCLE SECTION -->
+    <!-- Section profile -->
     <section id="profile" class="py-5">
-        <div class="container-fluid px-5">
+        <div class="container-fluid  px-5">
             <div class="row align-items-center">
-
-                <!-- Texte à gauche -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h2 class="profile-name mb-2">OMAR LAADRAOUI</h2>
                     <p class="profile-text">
-                        Passionné par le développement web , avec un intérêt particulier
+                        Etudiant en Bachelor 2 à l'école Hexagone.Passionné par le développement web , avec un intérêt
+                        particulier
                         pour les interfaces modernes, les expériences interactives et l’ingénierie des données.
                         Curieux et rigoureux, l’objectif est de créer des solutions propres et maintenables .
                     </p>
                 </div>
-
-                <!-- Cercle d'icônes à droite -->
                 <div class="col-lg-6">
                     <div class="profile-circle-wrapper">
                         <div class="profile-circle center-circle">
                             <span class="center-label">Omar</span>
                         </div>
-
-                        <!-- Icônes autour -->
                         <a href="#experience" class="profile-circle small-circle circle-top">
                             <i class="bi bi-briefcase"></i>
                         </a>
@@ -136,8 +132,8 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-4">
+    <!-- Section projets -->
+    <section id="projects" class="py-4 bg-black">
         <div class="container-fluid px-5">
             <h2 class="display-5 fw-bold text-white mb-5">PROJETS</h2>
 
@@ -167,8 +163,9 @@
                 <!-- Project 2 -->
                 <div class="col-lg-6 col-md-6">
                     <div class="card h-100 border-0">
+                        <img class="card-img-top" src="./img/Simon.png" alt="Image du jeu de simon">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold">Shuffle Puck 3D- BEMS</h5>
+                            <h5 class="card-title fw-bold">Jeu de simon - Hexagone</h5>
                             <p class="card-text">
                                 Jeu de air hockey futuriste réalisé en 3D avec Unreal Engine en C++.
                                 Gestion de la physique de la rondelle, caméra dynamique, interface utilisateur
@@ -176,11 +173,11 @@
                                 et système de score complet pour des parties rapides et immersives.
                             </p>
                             <div class="d-flex gap-2 flex-wrap mb-3">
-                                <span class="badge bg-dark">PHP</span>
-                                <span class="badge bg-dark">Bootstrap</span>
-                                <span class="badge bg-dark">MySQL</span>
+                                <span class="badge bg-dark">Arduino</span>
+                                <span class="badge bg-dark">Tinkercad</span>
+                                <span class="badge bg-dark">Modélisation 3D/Autodesk</span>
+                                <span class="badge bg-dark">C++</span>
                             </div>
-                            <a href="#" class="btn btn-sm btn-primary">Voir le projet →</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +202,7 @@
                 <!-- Project 4 -->
                 <div class="col-lg-6 col-md-6">
                     <div class="card h-100 border-0 ">
-                        <img class="card-img-top" src="./img/Taskmaster.png" alt="Image du site Vaccin sans frontières">
+                        <img class="card-img-top" src="./img/Asso.png" alt="Image du site Vaccin sans frontières">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Site pour une association fictif</h5>
                             <p class="card-text">
@@ -223,20 +220,18 @@
                 </div>
             </div>
     </section>
-    <!-- WORK EXPERIENCE SECTION -->
+    <!-- Section experience -->
     <section id="experience" class="py-4">
         <div class="container-fluid px-5">
             <h2 class="display-5 fw-bold text-white mb-1">WORK EXPERIENCE</h2>
 
             <div class="experience-item py-4">
                 <div class="row g-3">
-                    <!-- Col gauche : index + entreprise -->
                     <div class="col-lg-3">
-                        <p class="experience-index mb-1">01.</p>
+                        <p class="experience-index text-white mb-1">01.</p>
                         <p class="experience-company mb-0">BEMS</p>
                     </div>
 
-                    <!-- Col droite : description + stack -->
                     <div class="col-lg-9">
                         <p class="experience-description mb-3">
                             Stage au sein de l’entreprise BEMS consacré à la réalisation d’un POC de jeu vidéo
@@ -244,29 +239,29 @@
                             (mécaniques de jeu, physique, intégration des assets).
                         </p>
 
-                        <p class="experience-tech-label mb-2">Tech stack :</p>
+                        <p class="experience-tech-label  text-white-50 mb-2">TECH STACK :</p>
                         <div class="d-flex flex-wrap gap-2">
-                            <span class="xp-badge">C++</span>
-                            <span class="xp-badge">Unreal Engine</span>
-                            <span class="xp-badge">3D Game Dev</span>
+                            <span class="badge badge badge rounded-pill bg-dark">C++</span>
+                            <span class="badge badge badge rounded-pill bg-dark">Unreal Engine</span>
+                            <span class="badge badge badge rounded-pill bg-dark">3D Game Dev</span>
                         </div>
                     </div>
                 </div>
 
-                <hr class="experience-separator mt-4">
+                <hr class="experience-separator bg-dark-subtle mt-4">
             </div>
         </div>
     </section>
 
 
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="py-5">
+    <!-- Section compétences -->
+    <section id="skills" class="py-5 bg-black">
         <div class="container-fluid px-5">
             <h2 class="display-5 fw-bold text-white ">SKILLS</h2>
 
             <div class="row g-4">
-                <!-- Colonne gauche : badges -->
+
                 <div class="col-lg-6">
                     <div class="d-flex flex-wrap gap-3 mt-5">
                         <button class="skill-badge active" data-skill="html">HTML</button>
@@ -284,7 +279,7 @@
                     </div>
                 </div>
 
-                <!-- Colonne droite : panneau de description -->
+
                 <div class="col-lg-6">
                     <div class="skill-panel">
                         <h5 id="skill-title" class="fw-bold mb-3">HTML</h5>
@@ -300,12 +295,10 @@
     </section>
 
 
-    <!-- CONTACT / CTA SECTION -->
-    <section id="contact" class="py-5  text-white">
+    <!-- Section contact-->
+    <section id="contact" class="py-5 text-white">
         <div class="container-fluid px-5">
             <div class="row">
-
-                <!-- LEFT: Call-to-Action Text -->
                 <div class="col-lg-6 mb-5 mb-lg-0 d-flex flex-column justify-content-center">
                     <h2 class="display-4 fw-bold mb-4">Let's<br>Connect</h2>
                     <p class="lead text-light mb-4">
@@ -320,8 +313,6 @@
                         <p>🐙 <strong>GitHub:</strong> github.com/Kiting7</p>
                     </div>
                 </div>
-
-                <!-- RIGHT: Contact Form -->
                 <div class="col-lg-6">
                     <form>
                         <div class="mb-3">
@@ -350,14 +341,11 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-2 border-top border-secondary">
+    <footer class="bg-black text-white text-center py-2 border-top border-secondary">
         <div class="container-fluid">
             <p class="mb-0 small">© 2025 Omar Laadraoui • Étudiant en Informatique à Hexagone</p>
         </div>
     </footer>
-
-
-    <!-- Bootstrap JS Bundle (nécessaire pour certains composants) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
